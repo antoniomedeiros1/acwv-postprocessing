@@ -1,0 +1,31 @@
+ ./acwv ../data/coarse.vti ../../acwv-postprocessing/sample/coarse_grid/ 8000 0.00025
+Reading input file: ../data/coarse.vti
+Rank: 0
+
+Simulation paremeters:
+X = 3000m
+Z = 3000m
+T = 2s
+dx = 15m
+dt = 0.00025s
+Saving velocity field...
+Solving...
+File saved
+Elapsed time: 16.024775 seconds
+
+...
+
+./acwv ../data/refined.vti ../../acwv-postprocessing/sample/refined_grid/ 8000 0.00025
+Reading input file: ../data/refined.vti
+Rank: 0
+
+Simulation paremeters:
+X = 3000m
+Z = 3000m
+T = 2s
+dx = 5m
+dt = 0.00025s
+Saving velocity field...
+Solving...
+File saved
+Elapsed time: 138.901508 seconds
