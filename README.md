@@ -4,4 +4,13 @@ Implementation of a pix2pix algorithm for reducing numerical dispersion for [acw
 
 ## Instructions
 
--
+- Install [UV](https://docs.astral.sh/uv/guides/install-python/)
+
+- Run `uv sync` for installing dependencies:
+
+```
+uv sync
+uv venv
+```
+
+- Run cells in the `main.ipynb` notebook.

@@ -8,3 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+
+model.png
+test/*
+train/*
+training_checkpoints/*
