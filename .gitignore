@@ -13,3 +13,5 @@ model.png
 test/*
 train/*
 training_checkpoints/*
+results/*
+!results/.gitkeep
