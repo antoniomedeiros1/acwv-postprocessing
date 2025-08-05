@@ -23,8 +23,9 @@ if [ "$TOTAL" -eq 0 ]; then
   exit 1
 fi
 
-# Calculate 80% for training
-TRAIN_COUNT=$(( (TOTAL * 80 + 99) / 100 )) # Round up
+# Calculate 60% for training
+TRAIN_COUNT=$(( (TOTAL * 60 + 99) / 100 )) # Round up
+TEST_COUNT=$(( (TOTAL * 80 + 99) / 100 )) # Round up
 
 # Loop and copy with new names
 for i in "${!FILES[@]}"; do
@@ -34,9 +35,9 @@ for i in "${!FILES[@]}"; do
 
   if [ "$i" -lt "$TRAIN_COUNT" ]; then
     cp "$FILE" "$TRAIN_DIR/$NEW_NAME"
-  else
+  elif [ "$i" -lt "$TEST_COUNT" ]; then
     cp "$FILE" "$TEST_DIR/$NEW_NAME"
   fi
 done
 
-echo "Copied $TRAIN_COUNT files to 'train' and $((TOTAL - TRAIN_COUNT)) to 'test'."
+echo "Copied $TRAIN_COUNT files to 'train' and $((TEST_COUNT - TRAIN_COUNT)) to 'test'."
