@@ -8,8 +8,8 @@ FILE_PREFIX="$2"
 NEW_PREFIX="$3"
 
 # Output directories
-TRAIN_DIR="./train"
-TEST_DIR="./test"
+TRAIN_DIR="../train"
+TEST_DIR="../test"
 
 # Create output directories if they don't exist
 mkdir -p "$TRAIN_DIR" "$TEST_DIR"

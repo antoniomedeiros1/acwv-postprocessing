@@ -12,6 +12,8 @@ wheels/
 model.png
 test/*
 train/*
+output/*
+!output/.gitkeep
 training_checkpoints/*
 results/*
 !results/.gitkeep
